@@ -13,6 +13,8 @@
 		931731F51B899893006C2329 /* ToDoList.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 931731F31B899893006C2329 /* ToDoList.xcdatamodeld */; };
 		931731F71B899893006C2329 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 931731F61B899893006C2329 /* Assets.xcassets */; };
 		931731FA1B899893006C2329 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 931731F81B899893006C2329 /* LaunchScreen.storyboard */; };
+		93DAF1D31B8A238F00D3586C /* Item+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93DAF1D11B8A238F00D3586C /* Item+CoreDataProperties.swift */; };
+		93DAF1D41B8A238F00D3586C /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93DAF1D21B8A238F00D3586C /* Item.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		931731F61B899893006C2329 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		931731F91B899893006C2329 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		931731FB1B899893006C2329 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		93DAF1D11B8A238F00D3586C /* Item+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Item+CoreDataProperties.swift"; path = "../Item+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		93DAF1D21B8A238F00D3586C /* Item.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Item.swift; path = ../Item.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +63,8 @@
 				931731EC1B899893006C2329 /* AppDelegate.swift */,
 				931731EE1B899893006C2329 /* ViewController.swift */,
 				931731F01B899893006C2329 /* Main.storyboard */,
+				93DAF1D11B8A238F00D3586C /* Item+CoreDataProperties.swift */,
+				93DAF1D21B8A238F00D3586C /* Item.swift */,
 				931731F61B899893006C2329 /* Assets.xcassets */,
 				931731F81B899893006C2329 /* LaunchScreen.storyboard */,
 				931731FB1B899893006C2329 /* Info.plist */,
@@ -98,6 +104,7 @@
 				TargetAttributes = {
 					931731E81B899893006C2329 = {
 						CreatedOnToolsVersion = 7.0;
+						DevelopmentTeam = 8P3RU95VBM;
 					};
 				};
 			};
@@ -137,8 +144,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				93DAF1D41B8A238F00D3586C /* Item.swift in Sources */,
 				931731EF1B899893006C2329 /* ViewController.swift in Sources */,
 				931731F51B899893006C2329 /* ToDoList.xcdatamodeld in Sources */,
+				93DAF1D31B8A238F00D3586C /* Item+CoreDataProperties.swift in Sources */,
 				931731ED1B899893006C2329 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -252,7 +261,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = ToDoList/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = co.teamapps.ToDoList;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -263,7 +274,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = ToDoList/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = co.teamapps.ToDoList;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -289,6 +302,7 @@
 				931732001B899893006C2329 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
